@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css files/cart.css">
+</head>
+
+<body>
+    <div class="cart-page container my-5">
+        <h1 class="text-light mb-4">Your Shopping Cart</h1>
+
+        <div class="row">
+            <!-- Cart Items Section -->
+            <div class="col-lg-8 col-md-12">
+                <div class="cart-item border rounded p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="images/item1.jpg" alt="Item Image" class="item-image rounded">
+                        <div class="item-details">
+                            <h5 class="text-light">Delicious Burger</h5>
+                            <p class="text-muted">Classic Beef Burger</p>
+                        </div>
+                        <div class="quantity-controls d-flex align-items-center">
+                            <button class="btn btn-sm btn-outline-light me-2">-</button>
+                            <span class="text-light">1</span>
+                            <button class="btn btn-sm btn-outline-light ms-2">+</button>
+                        </div>
+                        <p class="text-warning fw-bold">$12.99</p>
+                        <button class="btn btn-sm btn-danger">Remove</button>
+                    </div>
+                </div>
+
+                <!-- Repeat for more items -->
+                <div class="cart-item border rounded p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="images/item2.jpg" alt="Item Image" class="item-image rounded">
+                        <div class="item-details">
+                            <h5 class="text-light">Cheesy Pizza</h5>
+                            <p class="text-muted">Margherita Pizza</p>
+                        </div>
+                        <div class="quantity-controls d-flex align-items-center">
+                            <button class="btn btn-sm btn-outline-light me-2">-</button>
+                            <span class="text-light">2</span>
+                            <button class="btn btn-sm btn-outline-light ms-2">+</button>
+                        </div>
+                        <p class="text-warning fw-bold">$18.99</p>
+                        <button class="btn btn-sm btn-danger">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary Section -->
+            <div class="col-lg-4 col-md-12">
+                <div class="cart-summary border rounded p-4">
+                    <h4 class="text-light">Summary</h4>
+                    <div class="d-flex justify-content-between my-3">
+                        <p class="text-muted">Subtotal</p>
+                        <p class="text-light">$50.97</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <p class="text-muted">Tax</p>
+                        <p class="text-light">$5.10</p>
+                    </div>
+                    <hr class="text-muted">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5 class="text-light">Total</h5>
+                        <h5 class="text-warning">$56.07</h5>
+                    </div>
+                    <button class="btn btn-warning w-100">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

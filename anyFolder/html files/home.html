@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavored</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css files/style.css">
+    <link rel="stylesheet" href="../css files/responsive.css">
+
+</head>
+
+<body>
+    <div class="innerBody">
+        <!-- Navbar -->
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="../images/Logo.png" alt="">
+                <!-- Toggle button: Visible on medium and smaller screens -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content: Visible on large screens -->
+                <div class="d-none d-lg-flex">
+                    <ul
+                        class="navbar-nav me-auto gap-3 d-none d-lg-flex flex-row justify-content-center align-items-center">
+
+                        <!-- ---------------------Login---------------------------- -->
+                        <li class="nav-item">
+                            <a class="nav-link active" id="login" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <!-- --------------------Register---------------------------- -->
+                        <li class="nav-item">
+                            <a class="nav-link active" id="register" aria-current="page"
+                                href="register.html">Register</a>
+                        </li>
+                        <!-- --------------------------------------------------------------- -->
+
+                    </ul>
+                </div>
+                <!-- Offcanvas content: Visible on medium and smaller screens -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+
+                        <button type="button" class="btn-close " data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="font-weight: 700;">
+                            <li class="nav-item">
+                                <a style=" color: rgb(153, 98, 20);" class="nav-link active" id="flavor"
+                                    aria-current="page" href="#">Pizza</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: beige;" class="nav-link active" href="#">Burger</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Brand Description -->
+        <!-- Brand Description -->
+        <div class="BrandDescription">
+            <div class="row align-items-center justify-content-center text-center">
+                <!-- Text Content -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="container text-content">
+                        <h1 class="display-4 fw-bold">
+                            Welcome to <br><img id="logo1" src="../images/logo1.png" alt=""> <br> Where Every Bite is a
+                            Journey
+                        </h1>
+                        <p id="time" class="d-flex align-items-center justify-content-center text-center">
+                            <img id="clock" src="../images/clock.png" alt="Clock Icon" class="me-2">
+                            Serving from 9:00 am to 12:00 pm
+                        </p>
+                        <p class="mt-5">
+                            Experience food like never before! At Meal Tracker , we fuse the
+                            finest ingredients with bold flavors to create mouthwatering dishes that excite your senses.
+                            Whether you're here for our signature Burgers, savory Pizzas, or refreshing Drinks, every
+                            dish is made with love, passion, and the freshest ingredients. Come, indulge, and savor the
+                            flavors that define us!
+                        </p>
+                        <button id="explorebtn" class="btn mt-4" onclick="window.location.href='#'">Explore Our
+                            Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../javascript/home.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+        </script>
+
+</body>
+
+</html>
